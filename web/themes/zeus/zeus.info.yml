@@ -1,0 +1,21 @@
+name: ZEUS!
+type: theme
+base theme: classy
+description: 'A great theme for war among gods'
+package: Custom
+core_version_requirement: ^8 || ^9
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  primary_menu: 'Primary_menu'
+  secondary_menu: 'Secondary_menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: 'Highlighted'
+  featured_top: 'Featured top'
+  breadcrumb: 'Breadcrumb'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
