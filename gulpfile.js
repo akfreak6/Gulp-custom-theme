@@ -20,12 +20,12 @@ function sas(){
 };
 task(sas);
 
-  function lintCss() {
-    gulp.src('client/css/*.css')
-      .pipe(csslint())
-      .pipe(csslint.formatter());
-  };
-task(lintCss)
+//   function lintCss() {
+//     gulp.src('client/css/*.css')
+//       .pipe(csslint())
+//       .pipe(csslint.formatter());
+//   };
+// task(lintCss)
 
 function watchFile(){
     watch(('./app/scss**/*.scss'), sas);
@@ -33,4 +33,4 @@ function watchFile(){
 
 task('watch', watchFile);
 
-exports.default = series(parallel(browseSync,sas,lintCss),watchFile);
+exports.default = series(parallel(browseSync,sas),watchFile);
