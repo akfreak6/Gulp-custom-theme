@@ -14,9 +14,9 @@ function browseSync() {
 task(browseSync);
 
 function sas(){
-    return src('./app/scss/**/*.scss')
+    return src('./web/app/scss/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(dest('./app/css'))
+    .pipe(dest('./web/app/css'))
 };
 task(sas);
 
@@ -34,3 +34,4 @@ function watchFile(){
 task('watch', watchFile);
 
 exports.default = series(parallel(browseSync,sas),watchFile);
+
