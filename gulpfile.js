@@ -1,8 +1,7 @@
 var {gulp, series, parallel, src, dest, task, watch}= require('gulp');
 var browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
-var csslint = require('gulp-csslint');
-
+var scsslint = require('gulp-scss-lint');
  
 function browseSync() {
     browserSync.init({
@@ -20,12 +19,11 @@ function sas(){
 };
 task(sas);
 
-//   function lintCss() {
-//     gulp.src('client/css/*.css')
-//       .pipe(csslint())
-//       .pipe(csslint.formatter());
-//   };
-// task(lintCss)
+function scssLint() {
+    return src('./web/app/scss/work.scss')
+      .pipe(scsslint());
+  };
+task(scssLint);
 
 function watchFile(){
     watch(('./app/scss**/*.scss'), sas);
@@ -33,5 +31,5 @@ function watchFile(){
 
 task('watch', watchFile);
 
-exports.default = series(parallel(browseSync,sas),watchFile);
+exports.default = series(parallel(browseSync,sas, scssLint),watchFile);
 
