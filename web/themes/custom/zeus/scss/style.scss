@@ -1,0 +1,64 @@
+$indian-red: #cd5c5c;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  &.region {
+    padding: 5px;
+  }
+
+  &.region-branding {
+    flex: 0 1 20%;
+  }
+
+  &.region-navigation {
+    flex: 0 1 50%;
+  }
+
+  &.region-search {
+    flex: 0 1 30%;
+  }
+}
+
+.region {
+  &.block-region {
+    padding: 15px;
+  }
+}
+
+.featured {
+  background-color: $indian-red;
+  padding: 40px 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+
+  &.content {
+    flex: 0 1 65%;
+  }
+
+  &.right--sidebar {
+    flex: 0 1 30%;
+  }
+}
+
+.footer--top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  .region {
+    padding: 5px;
+  }
+}
+
+.region-footer-first,
+.region-footer-second,
+.region-footer-third {
+  flex: 0 1 30%;
+}
