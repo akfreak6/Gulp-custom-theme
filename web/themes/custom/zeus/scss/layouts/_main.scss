@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+  
+    &.content {
+      flex: 0 1 65%;
+    }
+  
+    &.right--sidebar {
+      flex: 0 1 30%;
+    }
+  }
+  

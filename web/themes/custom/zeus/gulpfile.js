@@ -16,7 +16,7 @@ function scssLint() {
 task(scssLint);
 
 function watchFile(){
-    watch(('./scss/*.scss'), saas);
+    watch(('./scss/**/*.scss'), saas);
 }
 
 task('watch', watchFile);

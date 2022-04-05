@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  
+    &.region {
+      padding: 5px;
+    }
+  
+    &.region-branding {
+      flex: 0 1 20%;
+    }
+  
+    &.region-navigation {
+      flex: 0 1 50%;
+    }
+  
+    &.region-search {
+      flex: 0 1 30%;
+    }
+  }
+  
