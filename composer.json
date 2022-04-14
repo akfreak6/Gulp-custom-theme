@@ -21,6 +21,8 @@
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/devel": "^4.1",
+        "drupal/entity_reference_revisions": "^1.9",
+        "drupal/paragraphs": "^1.13",
         "drush/drush": "^11.0"
     },
     "conflict": {
@@ -33,7 +35,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "drupal/console-extend-plugin": true
         }
     },
     "extra": {
