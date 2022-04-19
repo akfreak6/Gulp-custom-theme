@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+// function test_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+//     \Drupal::logger('hook')->notice('<pre>' . print_r($hook, TRUE) . '</pre>');
+// }
+
+function test_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+        $suggestions[] = 'test__test';
+    }
+    
+  

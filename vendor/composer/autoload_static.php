@@ -44,6 +44,7 @@ class ComposerStaticInit0944e10b0252a1b06eb2f5a264f9806f
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '5a12a5271c58108e0aa33355e6ac54ea' => __DIR__ . '/..' . '/drupal/console-core/src/functions.php',
+        '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -123,6 +124,10 @@ class ComposerStaticInit0944e10b0252a1b06eb2f5a264f9806f
             'Laminas\\Feed\\' => 13,
             'Laminas\\Escaper\\' => 16,
             'Laminas\\Diactoros\\' => 18,
+        ),
+        'K' => 
+        array (
+            'Kint\\' => 5,
         ),
         'G' => 
         array (
@@ -401,6 +406,10 @@ class ComposerStaticInit0944e10b0252a1b06eb2f5a264f9806f
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
+        ),
+        'Kint\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kint-php/kint/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

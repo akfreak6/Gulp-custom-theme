@@ -23,6 +23,7 @@
         "drupal/devel": "^4.1",
         "drupal/entity_reference_revisions": "^1.9",
         "drupal/paragraphs": "^1.13",
+        "drupal/twig_debugger": "^1.1",
         "drush/drush": "^11.0"
     },
     "conflict": {
@@ -95,5 +96,8 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^4.1"
     }
 }

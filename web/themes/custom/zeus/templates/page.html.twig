@@ -1,11 +1,18 @@
+{% block header %}
 <header aria-label="Site header" class="header" id="header" role="banner">
      {{ page.branding }}
      {{ page.navigation }}
      {{ page.search }}
 </header>
+{% endblock %}
+
+{% block featured %}
 <section class="featured" id="featured" role="complementary">
    {{ page.featured }}
 </section>
+{% endblock %}
+
+{% block main %}
 <section class="main" id="main">
    <main aria-label="Site main content" class="content" id="content" role="main">
      {{ page.content }}
@@ -14,6 +21,15 @@
      {{ page.right_sidebar }}
    </aside>
 </section>
+{% endblock %}
+
+{% block hooter %}  
+   <div>
+      {{ page.hooter_first }}
+   </div>
+{% endblock %}
+
+{% block footer %}
 <footer aria-label="Site footer" class="footer" id="footer" role="contentinfo">
    <div class="footer--top">
      {{ page.footer_first }}
@@ -24,3 +40,4 @@
        {{ page.footer_bottom }}
    </div>
 </footer>
+{% endblock %}

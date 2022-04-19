@@ -6,6 +6,7 @@ package: Custom
 core_version_requirement: ^8 || ^9
 libraries: 
 - zeus/global-styling
+- zeus/cuddly-slider
 
 
 regions:
@@ -19,3 +20,4 @@ regions:
   footer_second: 'Footer Second'
   footer_third: 'Footer Third'
   footer_bottom: 'Footer Bottom'
+  hooter_first: 'Hooter First'
